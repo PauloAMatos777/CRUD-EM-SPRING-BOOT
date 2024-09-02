@@ -1,0 +1,16 @@
+// Configuração do Banco de Dados
+Para simplificar, estamos usando o H2 Database, que é um banco de dados em memória. No application.properties, adicione as seguintes configurações:
+
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.h2.console.enabled=true
+spring.jpa.hibernate.ddl-auto=update
+
+
+//Executando o Projeto
+Compile e execute o projeto Spring Boot.
+As APIs CRUD estarão acessíveis em http://localhost:8080/api/users.
+Você pode testar as APIs usando ferramentas como Postman ou cURL.
